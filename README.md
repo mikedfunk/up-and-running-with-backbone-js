@@ -13,3 +13,4 @@ learning backbone with [this lynda series](http://www.lynda.com/Backbonejs-tutor
 * to create a collection, you first must tell it which model it's based on. I guess that means you can only make collections of the same type of model.
 * a collection must be (1) defined with the model it uses (2) instantiated and then (3) add models to it
 * you can use [Backbone.Sync()](http://backbonejs.org/#Sync) to use `$.ajax` to persist data when it has changed, been removed, etc. Cool!
+* models and collections can have an initialize property -> function. this can have an this.on('change') function and other stuff.
