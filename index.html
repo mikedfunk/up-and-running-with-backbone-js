@@ -5,6 +5,20 @@
     <title>test</title>
   </head>
   <body>
+    <!--this is where out app attaches stuff-->
+    <div id="allFlowers"></div>
+
+    <!--an underscore template-->
+    <!--the id will act as a hook for the template settings in main.js-->
+    <!--the type can be whatever you want but it can't be text/javascript-->
+    <script id="flowerElement" type="text/template">
+      <a href="#<%= link %>"><img src="<%= img %>" alt="<%= name %>" class="image" /></a>
+      <ul>
+      <li class="flowerInfo">Name:<%= name %></li>
+      <li class="flowerInfo">Price:<%= price %></li>
+      <li class="flowerInfo">Color:<%= color %></li>
+      </ul>
+    </script>
 
     <script type="text/javascript" src="jspm_packages/system.js"></script>
     <script type="text/javascript" src="config.js"></script>
