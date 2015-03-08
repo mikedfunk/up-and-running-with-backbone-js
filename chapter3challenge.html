@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>chapter 3 template</title>
+  </head>
+  <body>
+    <div id="state-flowers"></div>
+
+    <!-- underscore template -->
+    <script id="flowerElement" type="text/template">
+      <h2><%= state %></h2>
+      <p><%= price %></p>
+      <p><%= color %></p>
+    </script>
+
+    <script type="text/javascript" src="jspm_packages/system.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script>
+      System.import('lib/chapter3challenge-app');
+    </script>
+  </body>
+</html>

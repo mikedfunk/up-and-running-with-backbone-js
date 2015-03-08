@@ -3,27 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <title>test</title>
+    <style type="text/css">
+      /* this is used by the event demo to set the background color for each
+      row on hover */
+      .bg-color-image {
+        background: silver;
+      }
+    </style>
   </head>
   <body>
+    <!-- this shows data from our routes-->
+    <div id="copy"></div>
     <!--this is where out app attaches stuff-->
-    <div id="allFlowers"></div>
+    <div id="all-flowers"></div>
 
     <!--an underscore template-->
     <!--the id will act as a hook for the template settings in main.js-->
     <!--the type can be whatever you want but it can't be text/javascript-->
-    <script id="flowerElement" type="text/template">
+    <script id="flower-element" type="text/template">
       <a href="#<%= link %>"><img src="<%= img %>" alt="<%= name %>" class="image" /></a>
       <ul>
-      <li class="flowerInfo">Name:<%= name %></li>
-      <li class="flowerInfo">Price:<%= price %></li>
-      <li class="flowerInfo">Color:<%= color %></li>
+        <li class="flower-info">Name:<%= name %></li>
+        <li class="flower-info">Price:<%= price %></li>
+        <li class="flower-info">Color:<%= color %></li>
       </ul>
     </script>
 
     <script type="text/javascript" src="jspm_packages/system.js"></script>
     <script type="text/javascript" src="config.js"></script>
     <script>
-      System.import('lib/main');
+      System.import('lib/app');
     </script>
   </body>
 </html>
